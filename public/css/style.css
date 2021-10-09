@@ -1,0 +1,558 @@
+/*顶栏*/
+
+.top-bar {
+    height: 100px;
+    background-color: #429be0;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.top-bar span {
+    display: inline-block;
+    height: 100%;
+    font-size: 36px;
+    padding-right: 10px;
+}
+
+/*导航栏*/
+
+.nav-bar {
+    background-color: #56758d;
+    height: 50px;
+}
+
+.logo {
+    height: 50px;
+    float: left;
+    background-color: #429be0;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.logo a {
+    color: #fff;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+
+.search {
+    background-color: #429be0;
+    float: right;
+    position: relative;
+}
+
+.search span {
+    font-family: 'icomoon';
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.search-r {
+    display: none;
+    right: 0;
+    bottom: -45px;
+    height: 40px;
+    width: 300px;
+    padding: 0 5px;
+    position: absolute;
+    border: 1px solid #ccc;
+    z-index: 999;
+}
+
+.search-r input {
+    height: 34px;
+    font-size: 14px;
+    outline: none;
+    margin: 3px 10px;
+    padding-left: 36px;
+    width: 280px;
+    color: #5fb4b4;
+}
+
+.search-r span {
+    font-family: 'icomoon';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: #ccc;
+    padding: 5px 7px;
+}
+
+.nav-bar > .w > ul {
+    float: right;
+}
+
+.nav-bar > .w > ul > li {
+    float: left;
+
+}
+
+.nav-bar > .w .level2 {
+    position: absolute;
+    z-index: 9999;
+    display: none;
+}
+
+.nav-bar li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 15px;
+    background-color: #56758d;
+}
+
+.nav-bar li a:hover {
+    background-color: #429be0;
+}
+
+/*公告*/
+
+.notice {
+    margin: 5px auto 10px;
+    background-color: #fff;
+    height: 40px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+    position: relative;
+}
+
+.shadow {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+}
+
+.notice::before {
+    content: '\ea26';
+    font-family: 'icomoon';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    color: #aad4a3;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.notice-content a {
+    width: 600px;
+    position: absolute;
+    color: #666;
+    /*display: block;*/
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    left: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.notice li {
+    float: left;
+}
+
+.notice li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #aad4a3;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.notice li span {
+    font-family: 'icomoon';
+    margin-right: 10px;
+    color: #666;
+}
+
+/*轮播图 start*/
+
+.rotation {
+    position: relative;
+    height: 350px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*轮播图 end*/
+
+/* 联系作者 start */
+
+.myinfo {
+    height: 100px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.about {
+    height: 60px;
+    border-bottom: 2px solid #429be0;
+}
+
+.about span {
+    font-family: 'icomoon';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #429be0;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 6px;
+    border-radius: 5px;
+}
+
+.about span > a {
+    color: #fff;
+}
+
+/* 联系作者 end */
+
+/* 每日一句 start */
+
+.everyday {
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 20px;
+    color: #429be0;
+    font-weight: 400;
+    border-bottom: 2px solid #429be0;
+    margin-bottom: 10px;
+}
+
+.everyday > p {
+    margin-top: 10px;
+    color: #abd3a5;
+    padding-bottom: 20px;
+}
+
+.everyday > span {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-size: 14px;
+    color: #848488;
+}
+
+/* 每日一句 end */
+
+/* 归档 start */
+
+.date-tag {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.date-tag li {
+    margin-top: 5px;
+    position: relative;
+    padding-left: 50px;
+}
+
+.date-tag li::before {
+    content: '\e953';
+    font-family: 'icomoon';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 18px;
+    color: #429be0
+}
+
+.date-tag li a {
+    color: #888888;
+}
+
+/* 归档 end */
+
+/* 标签云 start */
+
+.tag-cloud {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tag {
+    padding: 2px 10px 2px 20px;
+    display: inline-block;
+    border-radius: 3px;
+    position: relative;
+    color: #fff;
+    margin: 5px;
+}
+
+.tag a {
+    color: #fff;
+}
+
+.tag::before {
+    content: '·';
+    position: absolute;
+    font-size: 36px;
+    left: 0px;
+    top: -10px;
+}
+
+/* 标签云 end */
+
+/* 留言 start */
+
+.new-message {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.new-message li {
+    position: relative;
+    padding: 10px 0 20px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.new-message .head-face {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* vertical-align: 30px; */
+}
+
+.new-message .reply-cont {
+    width: 284px;
+    display: inline-block;
+}
+
+.new-message .reply-cont .username {
+    color: #f1ad52;
+    font-size: 16px;
+}
+
+.new-message .reply-cont .comment-body {
+    font-size: 14px;
+    padding: 5px;
+    color: #888888;
+}
+
+.new-message .reply-cont .comment-footer {
+    font-size: 12px;
+    position: absolute;
+    right: 25px;
+    color: #ccc;
+}
+
+/* 留言 end */
+
+/* 友情链接 start */
+
+.friend-link {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.friend-link li {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.friend-link a {
+    color: #888888;
+}
+
+/* 友情链接 end */
+
+/* 热门文章 start */
+
+.hot-list {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.hot-list .title {
+    padding-left: 40px;
+    position: relative;
+}
+
+.hot-list h1::before {
+    content: '\e9a9';
+    font-family: 'icomoon';
+    color: #429be0;
+    position: absolute;
+    left: 10px;
+}
+
+.hot-list a {
+    display: inline-block;
+    width: 500px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #848488;
+}
+
+.hot-list li {
+    position: relative;
+    margin: 10px;
+    border-bottom: 2px dashed #ccc;
+}
+
+.hot-list li span {
+    font-family: 'icomoon';
+    position: absolute;
+    right: 80px;
+    color: #f1ad52;
+    font-size: 14px;
+}
+
+.hot-list li span::before {
+    content: '\e9ce';
+    font-family: 'icomoon';
+    padding-right: 10px;
+}
+
+.hot-list li i {
+    font-family: 'icomoon';
+    position: absolute;
+    right: 20px;
+    color: #f1ad52;
+    font-size: 14px;
+}
+
+.hot-list li i::before {
+    content: '\e901';
+    font-family: 'icomoon';
+    padding-right: 5px;
+}
+
+/* 热门文章 end */
+
+/* 最近更新 start */
+
+.new-list {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.rows {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.img-block {
+    width: 40%;
+}
+
+.img-block img {
+    width: 100%;
+}
+
+.content-block {
+    width: 55%;
+}
+
+.content-block h2 {
+    font-size: 22px;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+.content-block p {
+    color: #5a5a5a;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.content-block .otherinfo span {
+    font-size: 13px;
+    margin-right: 10px;
+    color: #888888;
+}
+
+.content-block .otherinfo span::before {
+    font-family: 'icomoon';
+    padding-right: 5px;
+    content: '\e94f'
+}
+
+.content-block .author {
+    color: #429be0;
+}
+
+.content-block .author::before {
+    content: '\e905'
+}
+
+.view {
+    position: absolute;
+    font-size: 12px;
+    color: #888888;
+    bottom: 5px;
+    right: 10px;
+}
+
+.view i {
+    color: #429be0;
+}
+
+/* 最近更新 end */
+
+
+.myinfo .search {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.myinfo .search input {
+    width: 240px;
+    height: 48px;
+    outline-style: none;
+    border: 1px solid #aaa;
+    font-size: 18px;
+    text-indent: 1em;
+}
+
+.myinfo .search button {
+    width: 94px;
+    height: 48px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contentP {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}

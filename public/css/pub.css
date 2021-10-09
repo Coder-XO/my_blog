@@ -1,0 +1,30 @@
+.content {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.frr {
+    float: right;
+}
+
+.notice-content a {
+    float: left;
+}
+
+textarea {
+    resize: none;
+    height: 320px;
+    display: block;
+}
+
+form {
+    position: relative;
+}
+
+#subArt {
+    position: absolute;
+    top: 110%;
+}

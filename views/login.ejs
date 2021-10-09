@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>若愚博客</title>
+    <link rel="stylesheet" href="./public/css/style2.css">
+</head>
+
+<body>
+<div class="content">
+    <div class="form sign-in">
+        <h2>欢迎登录若愚博客</h2>
+        <form action="/doLogin" id="loginForm" method="post">
+            <label>
+                <span>用户名</span>
+                <input name="username" type="text" autofocus/>
+            </label>
+            <label>
+                <span>密码</span>
+                <input name="pwd" type="password"/>
+            </label>
+            <button class="submit">登 录</button>
+        </form>
+    </div>
+    <div class="sub-cont">
+        <div class="img">
+            <div class="img__text m--up">
+                <h2>还未注册？</h2>
+                <p>立即注册，发现大量机会！</p>
+            </div>
+            <div class="img__text m--in">
+                <h2>已有帐号？</h2>
+                <p>有帐号就登录吧，好久不见了！</p>
+            </div>
+            <div class="img__btn">
+                <span class="m--up">注 册</span>
+                <span class="m--in">登 录</span>
+            </div>
+        </div>
+        <div class="form sign-up">
+            <h2>立即注册</h2>
+            <form action="/doReg" id="regForm" method="post">
+                <label>
+                    <span>用户名(4到16位字母,数字,下划线,减号)</span>
+                    <input name="username" type="text" class="username" autofocus/>
+                </label>
+                <label>
+                    <span>密码(4到16位字母,数字,下划线,减号)</span>
+                    <input name="pwd" class="pwd" type="password"/>
+                </label>
+                <label>
+                    <span>密保问题:(慎重选择和填写)</span>
+                    <select name="question" id="question">
+                        <% for(let i = 0;i < results.length;i++){ %>
+                            <option value="<%= results[i].id %>"><%= results[i].content %></option>
+                        <% } %>
+                    </select>
+                </label>
+                <label>
+                    <span>密保答案:(一旦填写不可修改)</span>
+                    <input name="anwser" class="pwd" type="text"/>
+                </label>
+                <button class="submit" id="sub">注 册</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    // 点击登录注册转换按钮效果
+    document.querySelector('.img__btn').addEventListener('click', function () {
+        document.querySelector('.content').classList.toggle('s--signup')
+    })
+</script>
+<script src="./public/plugins/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+<script src="./public/js/script.js"></script>
+</body>
+</html>

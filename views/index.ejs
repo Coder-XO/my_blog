@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简约博客</title>
+    <link rel="shortcut icon" href="./public/img/favicon.ico"/>
+    <link rel="stylesheet" href="./public/css/base.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/plugins/jquerycarousel/css/index.css">
+
+    <script src="./public/plugins/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="./public/plugins/jquerycarousel/js/carousel.min.js"></script>
+    <script src="./public/js/index.js"></script>
+    <script src="./public/js/base.js"></script>
+</head>
+
+<body>
+<!-- 顶栏 start -->
+<div class="top-bar">
+    <span>欢迎:&nbsp;&nbsp;<%= data %></span>
+</div>
+<!-- 顶栏 end -->
+<!-- 导航栏 start -->
+<div class="nav-bar">
+    <div class="w">
+        <ul>
+            <li>
+                <a href="/index">首页</a>
+            </li>
+            <li>
+                <a href="#">文章类型</a>
+                <ul class="level2" id="artType">
+<!--                    <li><a href="javascript:void(0);">二级菜单11</a></li>-->
+                </ul>
+            </li>
+            <li>
+                <a href="/pub">发布文章</a>
+            </li>
+            <li><a href="/person">个人中心</a></li>
+        </ul>
+    </div>
+</div>
+<!-- 导航栏 end -->
+
+<!-- 广播 start -->
+<div class="w notice">
+    <div class="notice-content">
+        <a href="#">《Python3网络爬虫开发实战》赠书活动正在进行中！详情请戳赠书活动！欢迎参与！非常感谢！</a>
+    </div>
+    <ul class="fr">
+        <li><a href="/logout"><span></span>退出</a></li>
+        <li><a href="/login"><span></span>登录</a></li>
+    </ul>
+</div>
+<!-- 广播 end -->
+<!-- 主体部分 start -->
+<div class="w">
+    <div class="fl ll">
+        <!-- 轮播图 start -->
+        <div class="rotation">
+            <div class="pb-carouselWarp demo1">
+                <ul class="pb-carousel">
+                    <li class="pb-this"><a href="#"><img src="./public/img/1.jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="./public/img/2.jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="./public/img/3.jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="./public/img/4.jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="./public/img/5.jpg" alt=""/></a></li>
+                </ul>
+                <ul class="pb-carousel-ind">
+                    <li class="pb-this"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <button class="pb-arrow pb-arrow-prev"></button>
+                <button class="pb-arrow pb-arrow-next" id="aa"></button>
+            </div>
+        </div>
+        <!-- 轮播图 end -->
+        <!-- 最近更新 start -->
+        <div class="new-list shadow" id="bigBox">
+            <h1 class="title">文章展示</h1>
+
+        </div>
+        <!-- 最近更新 end -->
+    </div>
+
+    <div class="fr rr">
+        <!-- 联系我 start -->
+        <div class="myinfo shadow">
+            <div class="search">
+                <input type="text" id="keyWord">
+                <button id="searchArt">搜索文章</button>
+            </div>
+        </div>
+        <!-- 联系我 end -->
+
+        <!-- 归档 start -->
+        <div class="date-tag shadow">
+            <h1 class="title">归档</h1>
+            <ul>
+                <li><a href="#">2019年01月 - 2019年02月</a></li>
+                <li><a href="#">2019年01月 - 2019年02月</a></li>
+                <li><a href="#">2019年01月 - 2019年02月</a></li>
+                <li><a href="#">2019年01月 - 2019年02月</a></li>
+                <li><a href="#">2019年01月 - 2019年02月</a></li>
+            </ul>
+        </div>
+        <!-- 归档 end -->
+
+        <!-- 标签云 start -->
+        <div class="tag-cloud shadow">
+            <h1 class="title">标签云</h1>
+            <span class="tag" style="background-color: blueviolet"><a href="#">java</a></span>
+            <span class="tag" style="background-color: #abcabc"><a href="#">python</a></span>
+            <span class="tag" style="background-color: #ab1ab1"><a href="#">c++</a></span>
+            <span class="tag" style="background-color: #bcdabc"><a href="#">算法</a></span>
+            <span class="tag" style="background-color: #abcabc"><a href="#">前端</a></span>
+            <span class="tag" style="background-color: #a10a0f"><a href="#">JavaScript</a></span>
+            <span class="tag" style="background-color: #a301ac"><a href="#">PHP</a></span>
+            <span class="tag" style="background-color: #ab1abc"><a href="#">Vue</a></span>
+            <span class="tag" style="background-color: #cbcab2"><a href="#">angularJS</a></span>
+        </div>
+        <!-- 标签云 end -->
+        <!-- 最新留言 start -->
+        <div class="new-message shadow">
+            <h1 class="title">最新留言</h1>
+            <ul>
+                <li>
+                    <div class="head-face">
+                        <img src="./public/img/head/1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="reply-cont">
+                        <p class="username">小小红色飞机</p>
+                        <p class="comment-body"><img
+                                    src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/96/2018new_kelian_org.png"
+                                    height="18" width="18"/><img
+                                    src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/96/2018new_kelian_org.png"
+                                    height="18" width="18"/><img
+                                    src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/96/2018new_kelian_org.png"
+                                    height="18" width="18"/><img
+                                    src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/96/2018new_kelian_org.png"
+                                    height="18" width="18"/><img
+                                    src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/96/2018new_kelian_org.png"
+                                    height="18" width="18"/><img
+                                    src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/96/2018new_kelian_org.png"
+                                    height="18" width="18"/>你好
+                        </p>
+                        <p class="comment-footer">2016年10月5日</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="head-face">
+                        <img src="./public/img/head/1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="reply-cont">
+                        <p class="username">小小红色飞机</p>
+                        <p class="comment-body">
+                            你好,欢迎来到冷文博客！！！！！
+                        </p>
+                        <p class="comment-footer">2016年10月5日</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="head-face">
+                        <img src="./public/img/head/1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="reply-cont">
+                        <p class="username">小小红色飞机</p>
+                        <p class="comment-body">
+                            小伙子，不错呀，加油！！！！！！！！！！
+                        </p>
+                        <p class="comment-footer">2016年10月5日</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 最新留言 end -->
+    </div>
+</div>
+<!-- 主体部分 end -->
+</body>
+
+</html>

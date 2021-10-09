@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>若愚博客</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="./public/css/base.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/message.css">
+    <link rel="stylesheet" href="./public/css/message2.css">
+    <!--    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+    <script src="./public/plugins/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="./public/js/base.js"></script>
+</head>
+
+<body>
+<!-- 顶栏 start -->
+<div class="top-bar">
+    <span><%= data %> 的个人中心</span>
+</div>
+<!-- 顶栏 end -->
+<!-- 导航栏 start -->
+<div class="nav-bar">
+    <div class="w">
+        <ul>
+            <li><a href="/index">首页</a></li>
+        </ul>
+    </div>
+</div>
+<!-- 导航栏 end -->
+
+<!-- 广播 start -->
+<div class="w notice">
+    <div class="notice-content">
+        <a href="javascript:;">《Python3网络爬虫开发实战》赠书活动正在进行中！详情请戳赠书活动！欢迎参与！非常感谢！</a>
+    </div>
+    <ul class="fr">
+        <li><a href="/logout"><span></span>退出</a></li>
+        <li><a href="/login"><span></span>登录</a></li>
+    </ul>
+</div>
+
+<div class="content">
+    <div class="left">
+        <ul>
+            <li class="updateInfo">个人信息</li>
+            <li class="updateSecret">修改密码</li>
+        </ul>
+    </div>
+    <div class="right">
+        <div class="info">
+            <button id="setInfo" class="btn" style="display: none;color: black;width: 220px">点击填写个人信息</button>
+            <form action="/doSetInfo" method="post" id="personInfo" style="display: none">
+                <label for="">真实姓名:
+                    <input type="text" name="realname">
+                </label><br>
+                <label for="">性别:
+                    男:<input type="radio" name="gender" value="男" checked>
+                    女:<input type="radio" name="gender" value="女">
+                </label><br>
+                <label for="">年龄:
+                    <input type="text" name="age">
+                </label><br>
+                <label for="">座右铭:
+                    <textarea name="motto" id="" cols="30" rows="10" style="resize: none"></textarea>
+                </label><br>
+                <button id="setPersonInfo">提交个人信息</button>
+            </form>
+            <!--展示信息的表单-->
+            <% if(res){ %>
+                <!-- 判断是否有信息 -->
+                <form action="" id="showInfo">
+                    <label for="">真实姓名:
+                        <input id="realname" type="text" name="realname" value="<%= res.realName %>" readonly autofocus>
+                    </label><br>
+                    <label for="">用户名:
+                        <input id="readInput" name="username" type="text" value="<%= res.username %>" readonly>
+                    </label><br>
+                    <% if(res.gender === '男'){ %>
+                        <label for="">性别:
+                            男:<input type="radio" name="gender" value="男" disabled checked>
+                            女:<input type="radio" name="gender" value="女" disabled>
+                        </label><br>
+                    <% } %>
+                    <% if(res.gender === '女'){ %>
+                        <label for="">性别:
+                            男:<input type="radio" name="gender" value="男" disabled>
+                            女:<input type="radio" name="gender" value="女" disabled checked>
+                        </label><br>
+                    <% } %>
+                    <label for="">年龄:
+                        <input id="age" type="text" name="age" value="<%= res.age %>" readonly>
+                    </label><br>
+                    <label for="">座右铭:
+                        <textarea itemid="motto" name="motto" id="" cols="30" rows="10"
+                                  readonly><%= res.motto %></textarea>
+                    </label><br>
+                </form>
+                <button id="updateInfo">修改信息</button>
+                <button id="submit" style="display: none">提交修改</button>
+            <% } %>
+        </div>
+        <div class="secret" style="display: none">
+            <form action="/doUpdateSecret" method="post" id="updateSecret">
+                <label for="" id="questionContent">请填写答案:
+                </label><br>
+                <label for="" id="">请填写答案:
+                    <input type="text" id="answer" name="answer">
+                </label><br>
+                <label for="">新密码:(4到16位字母,数字,下划线,减号)
+                    <input type="text" name="newSecret" id="newSecret">
+                </label><br>
+                <label for="">确认密码:
+                    <input type="text" name="age" id="reNewScret">
+                </label><br>
+                <button id="confirmUpdate"
+                        style="width: 127px;;height: 42px;line-height: 42px;text-align: center;font-size: 18px;border-radius: 10px">
+                    确认修改
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- 主体部分 end -->
+<script src="./public/plugins/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+<script src="./public/js/person.js"></script>
+</body>
+
+</html>

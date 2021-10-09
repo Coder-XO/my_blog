@@ -1,0 +1,146 @@
+.content {
+    width: 1200px;
+    height: 600px;
+    background-color: #aaaaaa;
+    margin: 10px auto;
+}
+
+.content .left {
+    width: 240px;
+    height: 100%;
+    background-color: #5fb4b4;
+    float: left;
+}
+
+.content .left ul li {
+    width: 100%;
+    height: 34px;
+    background-color: #0078B6;
+    color: white;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+}
+
+.content .left ul li:hover {
+    background-color: #0078DD;
+}
+
+.content .left ul li.active {
+    background-color: blue;
+}
+
+
+.content .right {
+    width: 960px;
+    height: 100%;
+    background-color: pink;
+    float: right;
+}
+
+.info {
+    width: 100%;
+    height: 100%;
+    background-color: #5fb4b4;
+    position: relative;
+}
+
+.secret {
+    width: 100%;
+    height: 100%;
+    background-color: #5fb4b4;
+    position: relative;
+}
+
+.btn {
+    width: 200px;
+    height: 60px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#showInfo {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#personInfo {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#showInfo input, textarea {
+    resize: none;
+    margin-top: 20px;
+}
+
+#showInfo input:not([type='radio']) {
+    width: 220px;
+    height: 32px;
+    margin-top: 10px;
+    text-indent: 1em;
+}
+
+#showInfo input[type='radio'] {
+    width: 20px;
+    height: 20px;
+}
+
+.info button {
+    position: absolute;
+    width: 124px;
+    height: 44px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 44px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button#updateInfo {
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button#submit {
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.secret {
+    width: 100%;
+    height: 100%;
+    background-color: #5fb4b4;
+    position: relative;
+}
+
+#updateSecret {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#updateSecret input {
+    display: block;
+    width: 280px;
+    height: 40px;
+    margin-top: 10px;
+    text-indent: 1em;
+}

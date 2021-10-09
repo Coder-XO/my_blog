@@ -1,0 +1,97 @@
+.detail-content {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.post-title h1 {
+    font-size: 24px;
+    color: #333333;
+}
+
+.post-title .other-info {
+    margin: 10px 0;
+    font-size: 13px;
+    padding-bottom: 10px;
+    color: #888888;
+    border-bottom: 1px solid #cccccc;
+}
+
+.post-title .other-info a {
+    color: #429be0;
+}
+
+.post-title .other-info span {
+    margin-right: 10px;
+}
+
+.detail-content .copyright {
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+.detail-content .copyright a {
+    color: #aaaaaa;
+}
+
+.post-content {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 20px;
+}
+
+.detail-content .sponsor {
+    text-align: center;
+    position: relative;
+}
+
+.detail-content .sponsor button {
+    color: #429be0;
+    border: 2px solid #429be0;
+    display: inline-block;
+    padding: 2px 30px;
+    border-radius: 5px;
+}
+
+.detail-content .sponsor button:hover {
+    color: #fff;
+    background-color: #429be0;
+}
+
+.sponsor-qrcode {
+    width: 300px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sponsor-qrcode img {
+    width: 100%;
+}
+
+.post-tag {
+    background-color: #fff;
+}
+
+.post-source {
+    padding: 0 10px 10px;
+    color: #f03b33;
+    font-size: 14px;
+    border-bottom: 1px dashed #cccccc;
+}
+
+.post-source a {
+    color: #888888;
+}
+
+.post-source a::before {
+    content: '\e9cb';
+    font-family: 'icomoon';
+    color: #429be0;
+    margin-right: 10px;
+}

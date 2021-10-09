@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>若愚博客</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="./public/css/base.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/message.css">
+
+    <script src="./public/plugins/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./public/plugins/sinaFacE/css/sinaFaceAndEffec.css"/>
+    <script type="text/javascript" src="./public/plugins/sinaFacE/js/sinaFaceAndEffec.js"></script>
+
+    <script src="./public/js/base.js"></script>
+    <script src="./public/js/message.js"></script>
+</head>
+
+<body>
+<!-- 顶栏 start -->
+<div class="top-bar">
+    <span>若愚</span>
+    <i>若愚的博客</i>
+</div>
+<!-- 顶栏 end -->
+<!-- 导航栏 start -->
+<div class="nav-bar">
+    <div class="w">
+        <!-- logo -->
+        <div class="logo">
+            <h1><a href="index.ejs" title="冷文博客">若愚博客</a></h1>
+        </div>
+        <!-- search -->
+        <div class="search">
+            <a href="javascript:void(0);" id="search-btn"><span></span></a>
+            <div class="search-r" id="search-txt">
+                <input type="text">
+                <span></span>
+            </div>
+        </div>
+        <!-- 导航菜单 -->
+        <ul>
+            <li><a href="#">导航菜单</a></li>
+            <li><a href="#">导航菜单</a></li>
+            <li><a href="#">导航菜单</a></li>
+            <li><a href="#">导航菜单</a></li>
+            <li><a href="#">导航菜单</a></li>
+            <li><a href="#">导航菜单</a></li>
+            <li><a href="#">精品软件</a></li>
+            <li><a href="#">留言</a></li>
+        </ul>
+    </div>
+</div>
+<!-- 导航栏 end -->
+
+<!-- 广播 start -->
+<div class="w notice">
+    <div class="notice-content">
+        <a href="#">《Python3网络爬虫开发实战》赠书活动正在进行中！详情请戳赠书活动！欢迎参与！非常感谢！</a>
+    </div>
+    <ul class="fr">
+        <li><a href="#"><span></span>注册</a></li>
+        <li><a href="#"><span></span>登录</a></li>
+    </ul>
+</div>
+<!-- 广播 end -->
+<!-- 主体部分 start -->
+<div class="w">
+    <div class="fl ll">
+        <div class="message shadow clearfix">
+            <label for="author" class="fl"> 昵称
+                <input type="text" id="author">
+            </label>
+            <label for="email" class="fr"> 邮箱
+                <input type="text" id="email">
+            </label>
+            <div class="message-box">
+                <textarea id="messageBox"></textarea>
+                <span id="face-btn"></span>
+                <span id="img-btn"></span>
+                <button id="commit">提交</button>
+            </div>
+        </div>
+        <div class="show-message-list shadow">
+            <h1 class="title">留言列表</h1>
+            <ul>
+                <li class="clearfix">
+                    <div class="header fl">
+                        <img src="./public/img/head/1.jpg" alt="">
+                    </div>
+                    <div class="content fr">
+                        <h4>阿加西</h4>
+                        <p>哈哈，支持支持</p>
+                    </div>
+                    <div class="message-footer">
+                        <p>2019年05月20日 <a href="#">回复</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="fr rr">
+        <!-- 联系我 start -->
+        <div class="myinfo shadow">
+            <div class="about">
+                <span><a href="#"></a></span>
+                <span><a href="#"></a></span>
+                <span><a href="#"></a></span>
+                <span><a href="#"></a></span>
+                <span><a href="#"></a></span>
+            </div>
+        </div>
+        <!-- 联系我 end -->
+        <!-- 每日一句 start -->
+        <div class="everyday shadow">
+            <h1 class="title">每日一句</h1>
+            <p>人生若只如初见，何事秋风悲画扇</p>
+            <span>2019年05月20日 星期一</span>
+        </div>
+        <!-- 每日一句 end -->
+        <!-- 归档 start -->
+        <div class="date-tag shadow">
+            <h1 class="title">归档</h1>
+            <ul>
+                <li><a href="#">2019年01月 - 2019年02月</a></li>
+                <li><a href="#">2019年01月 - 2019年02月</a></li>
+                <li><a href="#">2019年01月 - 2019年02月</a></li>
+                <li><a href="#">2019年01月 - 2019年02月</a></li>
+                <li><a href="#">2019年01月 - 2019年02月</a></li>
+            </ul>
+        </div>
+        <!-- 归档 end -->
+
+        <!-- 标签云 start -->
+        <div class="tag-cloud shadow">
+            <h1 class="title">标签云</h1>
+            <span class="tag" style="background-color: blueviolet"><a href="#">java</a></span>
+            <span class="tag" style="background-color: #abcabc"><a href="#">python</a></span>
+            <span class="tag" style="background-color: #ab1ab1"><a href="#">c++</a></span>
+            <span class="tag" style="background-color: #bcdabc"><a href="#">算法</a></span>
+            <span class="tag" style="background-color: #abcabc"><a href="#">前端</a></span>
+            <span class="tag" style="background-color: #a10a0f"><a href="#">JavaScript</a></span>
+            <span class="tag" style="background-color: #a301ac"><a href="#">PHP</a></span>
+            <span class="tag" style="background-color: #ab1abc"><a href="#">Vue</a></span>
+            <span class="tag" style="background-color: #cbcab2"><a href="#">angularJS</a></span>
+        </div>
+        <!-- 标签云 end -->
+        <!-- 最新留言 start -->
+        <div class="new-message shadow">
+            <h1 class="title">最新留言</h1>
+            <ul>
+                <li>
+                    <div class="head-face">
+                        <img src="./public/img/head/1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="reply-cont">
+                        <p class="username">小小红色飞机</p>
+                        <p class="comment-body"><img
+                                    src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/96/2018new_kelian_org.png"
+                                    height="18" width="18"/><img
+                                    src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/96/2018new_kelian_org.png"
+                                    height="18" width="18"/><img
+                                    src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/96/2018new_kelian_org.png"
+                                    height="18" width="18"/><img
+                                    src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/96/2018new_kelian_org.png"
+                                    height="18" width="18"/><img
+                                    src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/96/2018new_kelian_org.png"
+                                    height="18" width="18"/><img
+                                    src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/96/2018new_kelian_org.png"
+                                    height="18" width="18"/>你好
+                        </p>
+                        <p class="comment-footer">2016年10月5日</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="head-face">
+                        <img src="./public/img/head/1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="reply-cont">
+                        <p class="username">小小红色飞机</p>
+                        <p class="comment-body">
+                            你好,欢迎来到冷文博客！！！！！
+                        </p>
+                        <p class="comment-footer">2016年10月5日</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="head-face">
+                        <img src="./public/img/head/1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="reply-cont">
+                        <p class="username">小小红色飞机</p>
+                        <p class="comment-body">
+                            小伙子，不错呀，加油！！！！！！！！！！
+                        </p>
+                        <p class="comment-footer">2016年10月5日</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 最新留言 end -->
+        <!-- 友情链接 start -->
+        <div class="friend-link shadow">
+            <h1 class="title">友情链接</h1>
+            <ul>
+                <li><a href="http://www.baidu.com" target="_blank">百度</a></li>
+                <li><a href="http://www.baidu.com" target="_blank">新浪</a></li>
+                <li><a href="http://www.baidu.com" target="_blank">淘宝</a></li>
+                <li><a href="http://www.baidu.com" target="_blank">天猫</a></li>
+                <li><a href="http://www.baidu.com" target="_blank">爱奇艺</a></li>
+            </ul>
+        </div>
+        <!-- 友情链接 end -->
+    </div>
+</div>
+<!-- 主体部分 end -->
+</body>
+
+</html>

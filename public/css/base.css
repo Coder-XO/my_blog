@@ -1,0 +1,86 @@
+/*初始化*/
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+}
+
+i, s {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+input, button, textarea {
+    /*清除文本框获取焦点时默认的边框*/
+    outline: none;
+    /*去除边框*/
+    border: none;
+    /*添加边框*/
+    border: 1px solid #429be0;
+}
+
+/*字体图标*/
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?y7ukjt');
+    src: url('../fonts/icomoon.eot?y7ukjt#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?y7ukjt') format('truetype'), url('../fonts/icomoon.woff?y7ukjt') format('woff'), url('../fonts/icomoon.svg?y7ukjt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*清除浮动*/
+
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*版心*/
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.ll {
+    width: 800px;
+}
+
+.rr {
+    width: 380px;
+}
+
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
